@@ -1,0 +1,24 @@
+let ampx1=200;
+let ampy1=180;
+let periodx1=220;
+let periody1=240;
+
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(100);
+  translate(width/2,height/2);
+let x1=ampx1*sin((frameCount/periodx1)*2*PI);
+  let y1=ampy1*sin((frameCount/periody1)*2*PI);
+  line(0,0,x1,y1);
+  ellipse(x1,y1,10,10);
+  fill(45,45,45);
+  stroke(7);
+  
+  line(0,0,0,y1);
+  ellipse(0,y1,10,10);
+  fill(45,45,45,);
+  stroke(7);
+}
