@@ -1,0 +1,48 @@
+function setup() {
+  createCanvas(400, 400, );
+}
+
+function draw() {
+  background(100, 100, 220);
+  let x1 = 400;
+  let y1 = 220;
+
+  let period = 400;
+
+  line(0, 40, 400, 40);
+  stroke(4);
+  let amp = width/2;
+
+
+  
+
+
+  x1 = amp * sin((frameCount / period) *  4* PI);
+  
+
+
+  ellipse(x1, y1, 40, 40);
+  line(x1, y1, 200, 40);
+  fill(25);
+  stroke(9);
+  let a1 = 10;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
